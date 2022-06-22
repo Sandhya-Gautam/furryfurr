@@ -3,7 +3,9 @@ body{
     overflow: hidden;
     margin: 0;
     padding:0;
-    font-family:sans-serif; 
+    font-family:sans-serif;
+    background-color: rgba(25, 4, 4, 0.265); 
+   
 }
 .login{
     position: absolute;
@@ -56,13 +58,11 @@ body{
     color:rgb(147, 81, 87) ;
     cursor: pointer;
     }
-
-.inputs:focus~label,
+.inputs:focus~label,.inputs:hover~label,
 .input:valid~label{
     top: -5px;
     color: rgb(80, 80, 171);
    } 
-
 .signuplink{
     color:rgb(147, 81, 87) ;
     cursor: pointer;
@@ -73,3 +73,12 @@ body{
 .signuplink:hover{
     text-decoration: underline;
 }
+.submit:hover{
+    border: 2px solid rgb(147, 81, 87);
+    transition: .5s;
+}
+.inputs:active~label
+{
+    top:-5px;
+}
+
