@@ -72,6 +72,7 @@ p{
     color: white;
 }
 .log-in:hover{
+    cursor: pointer;
     color:crimson;
     background-color: white;
 }
@@ -81,6 +82,193 @@ p{
 } */
 .log-in h2{
     font-size: 20px;
+}
+.popdiv{
+    width:100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0,0.7);
+    position: absolute;
+    top:0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.cross{
+    margin-top: -380px;
+    margin-left: 8px;
+    width: 20px;
+    height: 30px;
+    cursor:pointer;
+}
+.cross p{
+    color: bisque;
+    font-size: 20px;
+}
+.pop_up{
+    
+    width:300px;
+    height: 450px;
+    background-color: bisque;
+    margin-top: 90px;
+    border-radius: 10px;
+}
+.pop_head{
+    width:300px;
+    height: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    cursor: pointer; 
+    text-align: center;
+    font-size: 15px;
+}
+.login_head{
+    width:100%;
+    height:35px;
+    border-bottom-right-radius: 10px;
+    border-style: hidden;
+    color: white;
+    background-color: rgb(172, 23, 53);
+    padding-top: 8px;
+}
+.registration_head{
+    width:100%;
+    height:35px;
+    color: rgb(171, 32, 60);
+    border-bottom-left-radius: 10px;
+    border-style: hidden;
+    padding-top: 8px;
+    /* background-color: rgb(171, 32, 60); */
+}
+/* login form */
+.login{
+    display: contents;
+    text-align: center;
+    line-height: 35px;
+    width: 100%;
+}
+.textfield{
+     margin: 25% 8%;
+}
+.text_field{
+    position:relative;
+    border-bottom: 2px solid rgb(162, 141, 141);
+    margin: 20px 0;
+    color:rgb(171, 32, 60) ;
+    line-height: 20px;
+    width: 100%;
+}
+
+.inputs{
+   width: 100%;
+   height:20px;
+   font-size: 15px;
+   border: none;
+   background: none;
+   outline: none;
+   padding-left: 7px; 
+   cursor:default; 
+   color: rgb(19, 19, 103);
+   }
+.text_field label{
+    position:absolute;
+    top:50%;
+    left: 5px;
+    transform: translateY(-60%);
+    font-size: 16px;
+    pointer-events: none;
+    transition-duration: .5s;
+    
+}
+.remember{
+    margin-top: -10px;
+    /* background-color: aqua; */
+    text-align: left;
+    color:rgb(171, 32, 60) ;
+    font-size: 14px;
+}
+.login_check{
+    margin-top: 5px;
+}
+.submit{
+    border: 0px ;
+    border-radius:13px;
+    background-color: rgb(171, 32, 60);
+    color: aliceblue;
+    height: 40px;
+    width: 240px;
+    font-size: 16px;
+}
+.forgetp{
+    font-size:15px;
+    color:rgb(171, 32, 60);
+    cursor: pointer;
+    }
+.inputs:focus~label,.inputs:hover~label,
+.input:valid~label{
+    top: -5px;
+    color:rgb(19, 19, 103);
+   } 
+.signuplink{
+    font-size: 13px;
+    color:rgb(171, 32, 60);
+    cursor: pointer;
+}
+.forgetp:hover{
+    text-decoration: underline;
+}
+.signuplink:hover{
+    text-decoration: underline;
+}
+.submit:hover{
+    border: 2px solid crimson;
+    transition: .5s;
+}
+.inputs:active~label
+{
+    top:-5px;
+}
+/* regestration form */
+.reg_box{
+    position:absolute;
+    width:290px;
+    height: 390px;
+    font-size: 15px;
+    background-color: bisque;
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 10px;
+    color: rgb(171, 32, 60);
+    padding-left: 20px;
+}
+.err{
+    color: red;
+    font-size: 10px;
+    height:14px;
+    font-family: cursive;
+}
+.main_reg label{
+    margin:5px;
+    margin-left: 10px;
+}
+.main_reg input{
+    height: 20px;
+    padding: 4px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style:none;
+}
+.check_lbl{
+    margin: 0px;
+    padding: 0px;
+}
+.signup{
+    font-size: 15px;
+    border-radius: 10px;
+    color: bisque;
+    background-color: rgb(171, 32, 60);
+    margin-top: 5px;
+    padding: 2px;
+    width: 30%;
 }
 .container{
     min-height: 100vh;

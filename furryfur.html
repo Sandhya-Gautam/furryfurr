@@ -28,7 +28,7 @@
                             <!-- <button class="log-in">
                                 <a href="firstpge.html"><h2>Log in/Register</h2></a>
                             </button> -->
-                            <a href="firstpage.html" class="log-in" style="border:1px solid; border-color: brown; padding: 5px;">
+                            <a  class="log-in" onclick="pop();" style="border:1px solid; border-color: brown; padding: 5px;">
                                 Log in/ Register
                             </a>
                         </li>
@@ -36,52 +36,98 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End of Header -->
-
-    <!-- main section -->
-    <section id="main">
-        <div class="main container">
-            <div>
-                <h1>Whether BIG <span></span></h1>
-                <h1>or SMALL <span></span></h1>
-                <h1>We have ALL <span></span></h1>
-                <a href="#" type="button" class="cta">shop</a>
-            </div>
-        </div>
-    </section>
-    <!-- end of main section -->
-    
-     <!-- Contact section -->
-    <section id="contact">
-        <div class="contact container">
-            <div><h1 class="section-title">Contact <span>info</span></h1></div>
-            <div class="contact-items">
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/phone--v1.png"/></div>
-                    <div class="contact-info">
-                        <h1>Phone</h1>
-                        <h2>9999999999</h2>
-                        <h2>+01-1111111</h2>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-email-support-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"/></div>
-                    <div class="contact-info">
-                        <h1>Email</h1>
-                        <h2>furryfur@gmail.com</h2>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/address.png"/></div>
-                    <div class="contact-info">
-                        <h1>Address</h1>
-                        <h2>New road, Kathmandu</h2>
-                        <h2>Nepal</h2>
-                    </div>
+        </section>
+        <!-- End of Header -->
+        
+        <!-- main section -->
+        <section id="main">
+            <div class="main container">
+                <div>
+                    <h1>Whether BIG <span></span></h1>
+                    <h1>or SMALL <span></span></h1>
+                    <h1>We have ALL <span></span></h1>
+                    <a href="#" type="button" class="cta">shop</a>
                 </div>
             </div>
-        </div>
+            <!-- pop-up-->
+            <div class="popdiv">
+            
+            <div class="pop_up">
+                <div class="pop_head">
+                    <div class="login_head" onclick="display_login();">Log in</div>
+                    <div class="registration_head" onclick="display_reg();">Sign in</div>
+                </div>
+                <div class="login">
+                    <form method="post" action="" required autocomplete="off" class="textfield">
+                        <div class="text_field">
+                           <input type="text" name="usern" class="inputs inputtext"><label class="text">username</label>
+                        </div>
+                       <div class="text_field">
+                           <input type="password" name="passw" class="inputs inputps"><label class="text">password</label>
+                        </div >
+                        <div class="remember">
+                            <input type="checkbox" id="login_check" class="login_check"><label for="login_check" class="loginchecklbl">Remember me</label>
+                        </div>
+                        <input class="submit" type="submit"value="Login" onclick="link_firstpage();">
+                        <div class="forgetp"><a>Forget your password? </a></div>
+                            <div class="query">
+                            <span >Not a member?</span>
+                            <span class="signuplink" ><a onclick="dispay_reg();">Get Membership</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="reg_whole">
+                    <div class="reg_box">
+                       <form method="post" action=""  autocomplete="off" class="main_reg" onsubmit="validate();">
+                            <label class="name_lbl">Name</label><br/><input class="name" type="text" id="name"><span class="err one"></span><br/>
+                            <label class="phoneno_lbl">Phone Number</label><br/><input class="phoneno" type="text" id="phoneno" ><span class="err two"></span><br/>
+                            <label class="email_lbl">Email Address</label><br/><input class="email" type="text" id="email" ><span class="err three"></span><br/>
+                            <label class="username_lbl">Username</label><br/><input class="username" type="text" id="username"><span class="err four"></span><br/> 
+                            <label class="setpw_lbl">Set Password</label><br/><input class="setpw" type="password" id="setpw" ><span class="err five"></span><br/>
+                            <label class="confirmpw_lbl">Confirm Password</label><br/><input class="confirmpw" type="password" id="confirmpw" ><span class="err six"></span><br/>
+                            <input type="checkbox" class="check" id="check"><label for="check" class="check_lbl">Accept <span class="terms"> trems and conditions</span></label>  
+                            <br/><input type="submit" class="signup" value="Sign up" >
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="cross">
+                <p>x</p>
+            </div>
+        </div>   
+        </section>
+        <!-- end of main section -->
+        
+         <!-- Contact section -->
+        <section id="contact">
+            <div class="contact container">
+                <div><h1 class="section-title">Contact <span>info</span></h1></div>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/phone--v1.png"/></div>
+                        <div class="contact-info">
+                            <h1>Phone</h1>
+                            <h2>9999999999</h2>
+                            <h2>+01-1111111</h2>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-email-support-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"/></div>
+                        <div class="contact-info">
+                            <h1>Email</h1>
+                            <h2>furryfur@gmail.com</h2>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/address.png"/></div>
+                        <div class="contact-info">
+                            <h1>Address</h1>
+                            <h2>New road, Kathmandu</h2>
+                            <h2>Nepal</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <!-- End of contact section -->
 
